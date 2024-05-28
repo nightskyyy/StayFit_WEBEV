@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayFIT!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: white; /* Set text color to white */
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* Ensure container takes up the full height of the viewport */
+      background: url('gigachad.jpg') no-repeat center center fixed; /* Background image */
+      background-size: cover; /* Cover the entire container */
+      filter: grayscale(100%); /* Make the background image gray */
+      position: relative;
+    }
+
+    .header {
+      background-color: gray; /* Gray fill for the header */
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      position: absolute; /* Absolute positioning */
+      top: 0; /* Align to the top */
+    }
+
+    .title {
+      color: white; /* Ensure title color is white */
+      font-size: 48px; /* Increased font size */
+      margin: 0; /* Removed margin for better spacing */
+    }
+
+    .get-started-btn {
+      background-color: gray; /* Gray color for the button */
+      border: none;
+      color: white; /* Set button text color to white */
+      padding: 20px 40px; /* Increased padding */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px; /* Increased font size */
+      margin-top: 40px; /* Increased margin for better spacing */
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .get-started-btn:hover {
+      background-color: #6f6f6f; /* Slightly darker gray on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">StayFIT!</h1>
+    </div>
+    <button class="get-started-btn" onclick="window.location.href='page2.html'">Get Started</button>
+  </div>
+</body>
+</html>

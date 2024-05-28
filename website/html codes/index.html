@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayFIT!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: white; 
+      overflow-x: hidden; 
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: url('gigachad.gif') no-repeat center center fixed; 
+      background-size: cover; /* Adjusted */
+      filter: grayscale(100%); 
+      position: relative;
+    }
+
+    image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50;
+      object-fit: cover;
+      z-index: -1;
+      filter: grayscale(100%);
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.342); 
+      padding: 20px;
+      width: calc(100% - 5px); 
+      box-sizing: border-box; 
+      position: absolute; 
+      top: 0;
+      left: 0; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header img {
+      width: 100px; 
+      height: auto;
+      filter: none; 
+    }
+
+    .title {
+      color: white; 
+      font-size: 50px; 
+      margin: 0; 
+      margin-left: 20px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .footer {
+      background-color: rgba(0, 0, 0, 0.342); 
+      padding: 20px;
+      width: calc(100% - 5px); 
+      box-sizing: border-box; 
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .footer .name {
+      color: white; 
+      font-size: 25px; 
+    }
+    .footer .icons img {
+      margin-left: 10px;
+    }
+
+    .get-started-btn {
+      background-color: gray; 
+      border: none;
+      color: white;
+      padding: 30px 60px; 
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px; 
+      margin-top: 40px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease; 
+    }
+
+    .get-started-btn:hover {
+      background-color: black; 
+      transform: scale(1.1); 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <img src="StayFit! logo.png" alt="StayFIT Logo"> 
+        <h1 class="title">StayFIT!</h1>
+      </div>
+      
+    </div>
+    <button class="get-started-btn" onclick="window.location.href='page2.html'">Get Started</button>
+    <video autoplay muted loop>
+      <source src="gigachad.gif" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> 
+  </div>
+
+  <div class="footer">
+      <div class="footer-left">
+        <img src="2x2-1.jpg" alt="Profile Picture" width="50" height="50">
+        <span class="name">JAMES KEVIN MARANAN</span>
+      </div>
+      <div class="footer-right icons">
+          <a href="mailto:your-email@example.com" target="_blank">
+            <img src="pngtree-gmail-logo-png-png-image_4839469.jpg" alt="Gmail" width="30" height="30">
+          </a>
+          <a href="https://www.facebook.com/jameskevin.maranan" target="_blank">
+            <img src="fb logo.png" alt="Facebook" width="30" height="30">
+          </a>
+          <a href="https://www.instagram.com/jmskvnnn_/" target="_blank">
+            <img src="instagram logo.png" alt="Instagram" width="30" height="30">
+          </a>
+      </div>
+  </div>
+</body>
+</html>

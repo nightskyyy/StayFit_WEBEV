@@ -1,0 +1,101 @@
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: white; 
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: url('gigachad.jpg') no-repeat center center fixed; 
+      background-size: cover; 
+      filter: grayscale(100%); 
+      position: relative;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: grayscale(100%);
+    }
+
+    .header {
+      background-color: rgba(255, 255, 255, 0.342); 
+      padding: 20px;
+      width: 97.5%;
+      position: absolute; 
+      top: 0;
+      left: 0; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header img {
+      width: 100px; /* Adjust the size as needed */
+      height: auto;
+      filter: none; /* Ensure no filter is applied to the logo */
+    }
+
+    .title {
+      color: white; 
+      font-size: 50px; 
+      margin: 0; 
+      margin-left: 20px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .about-btn {
+      background-color: gray; 
+      border: none;
+      color: white;
+      padding: 10px 20px; 
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px; 
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .about-btn:hover {
+      background-color: #474747; 
+    }
+
+    .get-started-btn {
+      background-color: gray; 
+      border: none;
+      color: white;
+      padding: 60px 120px; /* Increased size */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 78px; /* Increased size */
+      margin-top: 40px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    .get-started-btn:hover {
+      background-color: black; 
+      transform: scale(1.1); /* Slightly larger on hover */
+    }
+  </style>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayFIT! - Page 2</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: white; /* Set text color to white */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Distribute space between elements */
+      min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px; /* Increased max-width for better use of space */
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1; /* Allow the container to grow and take up available space */
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: fixed;
+      center: 0; /* Position buttons at the bottom */
+      background-color: #333; /* Dark background to differentiate the button area */
+      padding: 350px 0;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+      margin: 10px;
+      transition: transform 0.3s; /* Smooth transition for scaling */
+    }
+
+    .button-wrapper:hover {
+      transform: scale(1.1); /* Enlarge on hover */
+    }
+
+    .image-banner {
+      width: 100%; /* Full width */
+      height: 700px; /* Adjust height as needed */
+      background-color: #ccc; /* Placeholder background color */
+      margin-bottom: 10px;
+      transition: transform 0.3s; /* Smooth transition for scaling */
+    }
+
+    .fitness-btn {
+      background-color: gray; /* Gray color for the buttons */
+      border: none;
+      color: white; /* Set button text color to white */
+      padding: 3px 40px; /* Increased padding */
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 24px; /* Adjusted font size for better fit */
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%; /* Full width */
+      height: 60px; /* Set height for buttons */
+      transition: transform 0.3s; /* Smooth transition for scaling */
+    }
+
+    .fitness-btn:hover {
+      opacity: 0.8;
+      transform: scale(1.1); /* Enlarge on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="button-container">
+      <div class="button-wrapper">
+        <div class="image-banner"></div>
+        <button class="fitness-btn routine-btn" onclick="window.location.href='routine.html'">Fitness Routine</button>
+      </div>
+      <div class="button-wrapper">
+        <div class="image-banner"></div>
+        <button class="fitness-btn diet-btn" onclick="window.location.href='diet.html'">Fitness Diet</button>
+      </div>
+      <div class="button-wrapper">
+        <div class="image-banner"></div>
+        <button class="fitness-btn workout-btn" onclick="window.location.href='workout.html'">Fitness Workout</button>
+      </div>
+      <div class="button-wrapper">
+        <div class="image-banner"></div>
+        <button class="fitness-btn health-btn" onclick="window.location.href='health.html'">Fitness Health</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

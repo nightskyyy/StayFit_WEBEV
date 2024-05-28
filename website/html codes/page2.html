@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayFIT! - Page 2</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: white; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      min-height: 100vh; 
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px; 
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1; 
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: fixed;
+      background-color: #333; 
+      padding: 350px 0;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+      margin: 10px;
+      transition: transform 0.3s; 
+    }
+
+    .button-wrapper:hover {
+      transform: scale(1.1); 
+    }
+
+    .image-banner {
+      width: 100%; 
+      height: 700px; 
+      background-color: #ccc; 
+      background-size: cover; 
+      background-position: center; 
+      margin-bottom: 10px;
+      transition: transform 0.3s; 
+      position: relative;
+    }
+
+    .circle {
+      width: 30px;
+      height: 30px;
+      background-color: rgb(17, 146, 252);
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .bubble {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+      z-index: 10;
+    }
+
+    .fitness-btn {
+      background-color: gray; 
+      border: none;
+      color: white; 
+      padding: 3px 40px; 
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 24px; 
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%; 
+      height: 60px; 
+      transition: transform 0.3s; 
+    }
+
+    .fitness-btn:hover {
+      opacity: 0.8;
+      transform: scale(1.1); 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="button-container">
+      <div class="button-wrapper">
+        <div class="image-banner" style="background-image: url('routine.jpg');">
+          <div class="circle" onclick="toggleBubble(event, 'This section provides a structured 30-day fitness plan designed to improve overall health and well-being. It includes a variety of exercises, such as cardio, strength training, and flexibility workouts, to ensure a balanced and comprehensive approach to fitness. The routine is designed to gradually increase intensity, helping to build endurance, strength, and flexibility while minimizing the risk of injury.')">i</div>
+          
+          <div class="bubble">Routine</div>
+        </div>
+        <button class="fitness-btn routine-btn" onclick="window.location.href='routine.html'">Fitness Routine</button>
+      </div>
+      <div class="button-wrapper">
+        <div class="image-banner" style="background-image: url('slim.webp');">
+          <div class="circle" onclick="toggleBubble(event, 'A proper diet is crucial for achieving fitness goals. This section offers nutritional guidance and meal plans tailored to support different types of fitness routines. It emphasizes balanced meals rich in essential nutrients, including proteins, healthy fats, and carbohydrates, to fuel workouts and aid recovery. Tips on hydration, portion control, and healthy eating habits are also included to help optimize performance and overall health.')">i</div>
+          <div class="bubble">Diet</div>
+        </div>
+        <button class="fitness-btn diet-btn" onclick="window.location.href='diet.html'">Fitness Diet</button>
+      </div>
+      <div class="button-wrapper">
+        <div class="image-banner" style="background-image: url('aaa.jpg');">
+          <div class="circle" onclick="toggleBubble(event, 'Focusing on specific exercises, this section provides detailed workout plans targeting various muscle groups. It includes strength training routines, HIIT (High-Intensity Interval Training) sessions, and other exercise regimens designed to improve muscle tone, strength, and cardiovascular health. Each workout is explained with step-by-step instructions and tips to ensure proper form and maximize effectiveness.')">i</div>
+          <div class="bubble">Workout</div>
+        </div>
+        <button class="fitness-btn workout-btn" onclick="window.location.href='workout.html'">Fitness Workout</button>
+      </div>
+      <div class="button-wrapper">
+        <div class="image-banner" style="background-image: url('healthyyy.jpg');">
+          <div class="circle" onclick="toggleBubble(event, 'Beyond exercise and diet, overall health and well-being are essential components of fitness. This section covers topics such as mental health, stress management, sleep hygiene, and injury prevention. It offers strategies to maintain a healthy lifestyle, manage stress, and ensure adequate rest and recovery, all of which are vital for sustaining long-term fitness and well-being.')">i</div>
+
+          <div class="bubble">Health</div>
+        </div>
+        <button class="fitness-btn health-btn" onclick="window.location.href='health.html'">Fitness Health</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleBubble(event, text) {
+      const bubble = event.target.nextElementSibling;
+      if (bubble.style.display === 'none' || bubble.style.display === '') {
+        bubble.style.display = 'block';
+        bubble.textContent = text;
+      } else {
+        bubble.style.display = 'none';
+      }
+    }
+
+    
+    document.addEventListener('click', function(event) {
+      const bubbles = document.querySelectorAll('.bubble');
+      bubbles.forEach(bubble => {
+        if (!bubble.contains(event.target) && !bubble.previousElementSibling.contains(event.target)) {
+          bubble.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
